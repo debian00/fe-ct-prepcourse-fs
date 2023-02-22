@@ -93,8 +93,8 @@ function colors(color) {
 }
 
 function esDiezOCinco(num) {
-   // Retornar "true" si "num" es 10 o 5.
-   // De lo contrario, retornar "false".
+   // Retornar true si "num" es 10 o 5.
+   // De lo contrario, retornar false.
    // Tu código:
    if (num === 10 || num === 5)
    return true;
@@ -104,8 +104,8 @@ function esDiezOCinco(num) {
 }
 
 function estaEnRango(num) {
-   // Retornar "true" si "num" es menor que 50 y mayor que 20.
-   // De lo contrario, retornar "false".
+   // Retornar true si "num" es menor que 50 y mayor que 20.
+   // De lo contrario, retornar false.
    // Tu código:
    if (num < 50 && num > 20)
    return true;
@@ -114,11 +114,11 @@ function estaEnRango(num) {
 }
 
 function esEntero(num) {
-   // Retornar "true" si "num" es un entero, ya sea positivo, negativo o cero.
+   // Retornar true si "num" es un entero, ya sea positivo, negativo o cero.
    // Ejemplo: 0.8   ---> false
    // Ejemplo: 1     ---> true
    // Ejemplo: (-10) ---> true
-   // De lo contrario, retorna "false".
+   // De lo contrario, retorna false.
    // Tu código:
   if (num % 1 === 0)
   return true;
@@ -129,10 +129,10 @@ function esEntero(num) {
 }
 
 function fizzBuzz(num) {
-   // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // Si "num" es divisible entre 3, retorna "fizz".
    // Si "num" es divisible entre 5, retorna "buzz".
-   // De lo contrario, retorna el número.
+   // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
+   // De lo contrario, retorna false.
    // Tu código:
    if( num % 15 === 0 && num % 3 === 0)
    return "fizzbuzz";
@@ -150,7 +150,7 @@ function operadoresLogicos(num1, num2, num3) {
    // Si num1 es mayor a num2 y a num3, y además es positivo, retornar ---> "Numero 1 es mayor y positivo".
    // Si alguno de los tres números es negativo, retornar ---> "Hay negativos".
    // Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
-   // Si alguno de los argumentos es cero, retornar ---> "Error".
+   // Si todos los argumentos son cero, retornar ---> "Error".
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
    if(num1 < 0 || num2 < 0 || num3 < 0) {
@@ -170,8 +170,8 @@ function operadoresLogicos(num1, num2, num3) {
 }
 }
 function esPrimo(num) {
-   // Retornar True si "num" es primo.
-   // De lo contrario retorna False.
+   // Retornar true si "num" es primo.
+   // De lo contrario retorna false.
    // [Pista 1]: un número primo sólo es divisible por sí mismo y por 1.
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
@@ -200,8 +200,8 @@ return 'Soy falso';
 }
 
 function tieneTresDigitos(num) {
-   // Si el número recibido tiene tres dígitos retornar True.
-   // Caso contrario, retornar False.
+   // Si el número recibido tiene tres dígitos retornar true.
+   // Caso contrario, retornar false.
    // Tu código:
    if (num > 99 && num < 1000)
    {

@@ -2,8 +2,8 @@
 /*3️⃣ EJERCICIO 03 3️⃣*/
 
 function sonIguales(x, y) {
-   // Retorna True si "x" e "y" son iguales.
-   // De lo contrario, retorna False.
+   // Retorna true si "x" e "y" son iguales.
+   // De lo contrario, retorna false.
    // Tu código:
    if (x === y)
    return true;
@@ -12,8 +12,8 @@ function sonIguales(x, y) {
 }
 
 function tienenMismaLongitud(str1, str2) {
-   // Retorna True si los dos strings tienen la misma longitud.
-   // De lo contrario, retorna False.
+   // Retorna true si los dos strings tienen la misma longitud.
+   // De lo contrario, retorna false.
    // Tu código:
    if (str2.length === str1.length)   
    return true;
@@ -22,8 +22,8 @@ function tienenMismaLongitud(str1, str2) {
 }
 
 function menosQueNoventa(num) {
-   // Retorna True si el argumento "num" es menor que noventa.
-   // De lo contrario, retorna False.
+   // Retorna true si el argumento "num" es menor que noventa.
+   // De lo contrario, retorna false.
    // Tu código:
    if (num < 90)
    return true;
@@ -32,8 +32,8 @@ function menosQueNoventa(num) {
 }
 
 function mayorQueCincuenta(num) {
-   // Retorna True si el argumento "num" es mayor que cincuenta.
-   // De lo contrario, retorna False.
+   // Retorna true si el argumento "num" es mayor que cincuenta.
+   // De lo contrario, retorna false.
    // Tu código:
    if (num > 50)
    return true;
@@ -42,8 +42,8 @@ function mayorQueCincuenta(num) {
 }
 
 function esPar(num) {
-   // Retorna True si "num" es par.
-   // De lo contrario, retorna False.
+   // Retorna true si "num" es par.
+   // De lo contrario, retorna false.
    // Tu código:
    if (num % 2 === 0 )
    return true;
@@ -52,8 +52,8 @@ function esPar(num) {
 }
 
 function esImpar(num) {
-   // Retorna True si "num" es impar.
-   // De lo contrario, retorna False.
+   // Retorna true si "num" es impar.
+   // De lo contrario, retorna false.
    // Tu código:
    if (num % 2 < 0| num % 2 > 0 )
    return true;

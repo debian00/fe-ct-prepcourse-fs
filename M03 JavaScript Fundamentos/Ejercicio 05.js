@@ -6,7 +6,7 @@ function esPositivo(num) {
    // es positivo o negativo.
    // Si el número es positivo ---> "Es positivo".
    // Si el número es negativo ---> "Es negativo".
-   // Si el número es 0, devuelve False.
+   // Si el número es 0, devuelve false.
    // Tu código:
    if (num > 0 )
    return "Es positivo";
@@ -46,7 +46,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 }
 
 function retornarPerimetro(lado) {
-   // La función recibe como argumento la medida de un lado de un rectángulo.
+   // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
    // Tu código:
    return lado + lado + lado + lado;
