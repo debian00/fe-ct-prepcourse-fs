@@ -56,8 +56,7 @@ function arrayContiene(array, elemento) {
    // Tu código:
    if(array.includes(elemento))   
    return true;
-   else 
-   return false;
+   else return false;
    
 }
 
