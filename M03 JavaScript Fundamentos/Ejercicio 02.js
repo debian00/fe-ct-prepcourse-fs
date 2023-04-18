@@ -48,3 +48,6 @@ module.exports = {
    multiplica,
    obtenerResto,
 };
+
+
+console.log(3.44-11)
