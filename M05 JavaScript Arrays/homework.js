@@ -155,25 +155,35 @@ function todosIguales(array) {
    // Si todos los elementos del arreglo son iguales, retornar true.
    // Caso contrario retornar false.
    // Tu código:
-if (allEqual(array)=== true)
-return true;
-else return false;
+   if (Math.min(...array) === Math.max(...array))
+   return true;
+   else return false;
+
 
 }
-
 function mesesDelAño(array) {
    // El arreglo contiene algunos meses del año desordenados. Debes recorrerlo, buscar los meses "Enero",
    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
-}
+      var nuevoarray =[]
 
+      for (let i = 0; i < array.length; i++) {
+     if (array[i] === "Enero" || 
+         array[i] === "Marzo" || 
+         array[i] === "Noviembre")         
+            nuevoarray.push(array[i]);           
+      }
+      if(nuevoarray.length != 3){
+      return "No se encontraron los meses pedidos"}
+      return nuevoarray;
+   }
+      
 function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
 }
-
 function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
