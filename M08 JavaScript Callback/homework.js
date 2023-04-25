@@ -5,19 +5,25 @@ function mayuscula(nombre) {
    // Debe devolver el mismo nombre, pero con la primera letra en mayúscula.
    // [Ejemplo]: "mario" ----> "Mario".
    // Tu código:
+   //Convertimos la primera posicion a Uppercase y aplicamos slice para que concatene desde
+   //la segunda psocicion dek string
+   return nombre.charAt(0).toUpperCase() + nombre.slice(1);
 }
 
 function invocarCallback(cb) {
    // Invoca/ejecuta el callback `cb`.
    // [NOTA]: no debes reotrnar nada.
    // Tu código:
+cb()
 }
+
 
 function operacionMatematica(num1, num2, cb) {
    // En este ejercicio recibirás dos números y un callback.
    // El callback realiza una operación matemática, por lo que necesita de los dos números.
    // Retorna el resultado del callback pasándole como parámetros los números.
    // Tu código:
+   return cb(num1, num2);
 }
 
 function sumarArray(arrayOfNumbers, cb) {
@@ -26,6 +32,11 @@ function sumarArray(arrayOfNumbers, cb) {
    // Este resultado debes pasárselo como argumento al callback recibido.
    // [NOTA]: no debes reotrnar nada.
    // Tu código:
+   var newarrayofnums = arrayOfNumbers.reduce((A, B) => A+B,0)
+   
+   cb(newarrayofnums);
+
+
 }
 
 function forEach(array, cb) {
@@ -33,6 +44,9 @@ function forEach(array, cb) {
    // Debes iterar sobre el arreglo, y por cada elemento ejecutar el callback.
    // Debes pasarle el elemento como argumento al callback.
    // Tu código:
+   array.forEach(e => {cb(e)
+      
+   });
 }
 
 function map(array, cb) {
@@ -40,6 +54,13 @@ function map(array, cb) {
    // Tiene que guardar el resultado devuelto por el callback en cada elemento dentro de un nuevo arreglo.
    // Retorna el nuevo arreglo.
    // Tu código:
+var rescall = []
+   for (let i = 0; i < array.length; index++) {
+      cb(array[i])
+       
+     
+   }
+ 
 }
 
 function filter(arrayOfStrings) {
