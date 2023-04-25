@@ -177,18 +177,31 @@ function mesesDelAño(array) {
       if(nuevoarray.length != 3){
       return "No se encontraron los meses pedidos"}
       return nuevoarray;
-   }
-      
+   }      
 function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
+
+   var tabla6 = [];
+for(i = 0; i <= 10; i++)
+         tabla6.push(i*6);
+         return tabla6;
 }
 function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+
+var mayores100 = []
+for (let i = 0; i < array.length; i++)
+if (array[i] > 100)
+   mayores100.push(array[i])
+   return mayores100;
 }
+
+
+
 
 /* ----------------------------------------------------------------------------------
 💪 EXTRA CREDIT EXTRA CREDIT EXTRA CREDIT EXTRA CREDIT EXTRA CREDIT  EXTRA CREDIT 💪
@@ -201,6 +214,19 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+var nuevoarreglo = [];
+
+for (var i = 0; i < 10; i++) {
+   num = num + 2;
+   if(num === i) break;
+   else nuevoarreglo.push(num);
+}
+if (i < 10){
+return "Se interrumpió la ejecución"
+}
+else {
+   return nuevoarreglo;
+      }
 }
 
 function continueStatement(num) {
@@ -210,6 +236,16 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+
+
+var nuevoarreglo = [];
+for (var i = 0; i < 10; i++) {
+  if (i ===5)
+  continue;
+  num = num + 2;
+  nuevoarreglo.push(num);
+}
+return nuevoarreglo;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
