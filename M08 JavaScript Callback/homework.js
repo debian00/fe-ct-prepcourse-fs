@@ -55,11 +55,11 @@ function map(array, cb) {
    // Retorna el nuevo arreglo.
    // Tu código:
 var rescall = []
-   for (let i = 0; i < array.length; index++) {
-      cb(array[i])
-       
+   for (let i = 0; i < array.length; i++) {
+     rescall.push(cb(array[i]))     
      
    }
+   return rescall;
  
 }
 
@@ -67,7 +67,15 @@ function filter(arrayOfStrings) {
    // Debes identificar todos los elementos el arreglo que comiencen con la letra "a".
    // Luego retorna un nuevo arreglo con estos elementos.
    // Tu código:
-}
+
+   var resultado = []
+   for (let i =0 ; i< arrayOfStrings.length; i++){
+   if(arrayOfStrings[i].charAt(0) === "a")
+      resultado.push(arrayOfStrings[i])
+      }
+   return resultado;
+   }
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
